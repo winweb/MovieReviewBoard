@@ -5,9 +5,11 @@ import com.auth0.MovieReviewBoard.director.DirectorRepository
 import com.auth0.MovieReviewBoard.movie.Movie
 import com.auth0.MovieReviewBoard.movie.MovieRepository
 import com.coxautodev.graphql.tools.GraphQLQueryResolver
+import io.leangen.graphql.spqr.spring.annotations.GraphQLApi
 import org.springframework.stereotype.Component
 
 @Component
+@GraphQLApi
 class Query(val movieRepository: MovieRepository, val directorRepository: DirectorRepository) : GraphQLQueryResolver {
 
     fun findAllMovies(): Iterable<Movie> {
