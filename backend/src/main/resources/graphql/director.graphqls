@@ -11,6 +11,11 @@ input DirectorInput {
 }
 
 extend type Query {
+    director(
+        # The non null id of the droid you are interested in
+        id: ID!
+    ): Director
+    directors: [Director]!
     findMoviesByDirector(directorId: ID) : [Movie]!
     countMoviesByDirector(directorId: ID) : Long!
     findAllDirectors : [Director]!
