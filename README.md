@@ -11,6 +11,6 @@
 
 # POC 
 
-* use JPQR's GUI online by `http://localhost:8888/gui`
+* use [SPQR](https://github.com/leangen/graphql-spqr)'s GUI online by `http://localhost:8888/gui`
 
 * use GraphiQL online by `http://localhost:8888/`
